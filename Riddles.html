@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouCanThink</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="riddle_section">
+        <h1>Riddle <span id="riddle-number">#1</span></h1>
+        <p id="riddle-text" class="rid">
+            What is stronger than steel but cannot handle the sun?
+        </p>
+        <div class="answerDiv">
+            <input class="input answerInput" type="text" id="user-answer" placeholder="Input your answer">
+            <button id="submit-answer">Submit</button>
+            <p id="error-message" class="error-message">Wrong! Try again.</p>
+        </div>
+        <div class="navigation">
+            
+            <button class="back-arrow" onclick="navigateRiddle(-1)">&#8592;</button>
+            <button class="forward-arrow" onclick="navigateRiddle(1)">&#8594;</button>
+        </div>
+        <div class="shows">
+            <button class="hint">Hint</button>
+            <button class="answer">Show answer</button>
+        </div>
+        <div class="achievement">
+            <button id="show-achievements">✔</button>
+        </div>
+    </div>
+    <div class="hintModal">
+        <div class="hintM">
+            <p id="hint-text">Solid water.</p>
+            <div class="exit" onclick="closeModal()">Close</div>
+        </div>
+    </div>
+    <div class="answerModal">
+        <div class="answerM">
+            <p id="answer-text">Ice.</p>
+            <div class="exit" onclick="closeModal()">Close</div>
+        </div>
+    </div>
+    <div class="achievementModal">
+        <div class="achievementM">
+            <h2>Achievements</h2>
+            <p id="achievement-text"></p>
+            <div class="exit" onclick="closeModal()">Close</div>
+        </div>
+    </div>
+    <script>
+       fetch('https://dummyjson.com/todos')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            return data;
+        })
+        .catch(error => console.error('Error fetching data:', error));
+
+    </script>
+         <script src="script.js"></script>
+</body>
+</html>

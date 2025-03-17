@@ -1,0 +1,184 @@
+body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #bca9c2;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        .riddle_section {
+            background: linear-gradient(135deg, #eaa6ff, #a2ff98);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            color: #ff5ee2;
+            border: 3px solid #ffffff;
+        }
+        .riddle_section h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .riddle_section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .answerDiv {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .answerDiv input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+        .answerDiv button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .answerDiv button:hover {
+            background-color: #a2ff98;
+        }
+        .shows {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .shows button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .shows button:hover {
+            background-color: #a2ff98;
+        }
+        .achievement {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .achievement button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgb(174, 251, 147);
+            color: #000;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .achievement button:hover {
+            background-color: #ff5ee2;
+        }
+        .hintModal, .answerModal, .achievementModal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            color: #ff5ee2;
+            border: 3px solid #000000;
+        }
+        .exit {
+            cursor: pointer;
+            color: #ff5ee2;
+            text-align: right;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+        
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+}
+
+.navigation button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.navigation {
+    position: fixed;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .back-arrow {
+    position: absolute;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.navigation .forward-arrow {
+    position:absolute;
+    right: 150px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.navigation .back-arrow:hover {
+    color: rgb(221, 56, 202);
+}
+.navigation .forward-arrow:hover {
+    color: green;
+}
+
