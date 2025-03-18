@@ -7,7 +7,7 @@ body, html {
             justify-content: center;
             align-items: center;
             background-color: #bca9c2;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: sans-serif;
         }
         .riddle_section {
             background: linear-gradient(135deg, #eaa6ff, #a2ff98);
